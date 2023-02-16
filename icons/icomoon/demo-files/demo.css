@@ -55,7 +55,7 @@ svg {
 }
 .liga {
   width: 80%;
-  width: calc(100% - 2.5em);
+  width: calc((100% - 2.5em));
 }
 .talign-right {
   text-align: right;

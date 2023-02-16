@@ -50,13 +50,11 @@ img {
 .list-mail {
    text-decoration: none;
 }
-<!--.logo-footer:hover {
+.logo-footer:hover {
    color: #2E2F42;
-}-->
+}
 .container{
-
-   /*width:1158px;*/
-   width: 100%;
+   width:1158px;
    padding-left: 15px;
    padding-right: 15px;
    margin-left: auto;
@@ -235,8 +233,8 @@ background-color: #404BBF;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-   padding-top: 112px;
-   padding-bottom: 112px;
+   padding-top: 188px;
+   padding-bottom: 188px;
 
  }
  .hero-title {
@@ -282,12 +280,21 @@ border-bottom-left-radius: 4px;
    0px 1px 6px rgba(46, 47, 66, 0.08);
   }
  
- 
-  .text-feauture {
+  .icons-link
+  {
+   padding: 24px 100px 24px 100px;
+   background-color: #F4F4FD;
+   gap: 24px;
+
+  }
+  
+
+  .text {
    font-size: 16px;
    line-height: 1.5;
    margin-top: 8px;
  }
+
  .text-team {
 font-size: 16px;
    line-height: 1.5;
@@ -314,17 +321,9 @@ font-size: 16px;
     font-family: Raleway, cursive;
     text-decoration: none;
  }
- .feature-list {
-    color: var(--primary-text-color);
-    display: flex;
-    gap: 24px;
-    margin: 0 auto;
 
- }
+ 
 
- .feature-list li .text {
-    max-width: 264px;
-    text-align: justify;}
  
  .feature-list-title  {
     color: var(--title-text-color);
@@ -521,7 +520,6 @@ overflow: hidden;
    background: #F4F4FD;
    padding-top: 120px;
    padding-bottom: 120px;
-   
 
 }
 
@@ -543,21 +541,13 @@ background-color: #2E2F42;
    .work-img {
       display: flex;
       gap: 24px;
-      /*width: calc(100%-48px)/3;*/
+      width: calc((100%-48px)/3);
       
    }
 .team-list {
-/*
-   display: flex;*/
+   display: flex;
    gap: 24px;
-   
 }
-
-.section-work .container .team-list li img {
-   display: block;
-   margin: 0 auto;
-}
-
 .list-color{
    background-color: #FFFFFF;
 }
@@ -992,66 +982,82 @@ color: rgba(117, 117, 117, 0.5);
  }
 
 
-@media screen and (min-width: 480px) {
-   .container {
-      max-width: 428px;
-   }
-      .icons {
-         display: none;
-      }
-
+ @media screen and (max-width: 480px) {
+    .container .container-mini {
+       max-width: 100%;
+    }
+        .icons {
+           display: none;
+        }
+                  .feature-list {
+                     color: var(--primary-text-color);
+                     gap: 24px;
+                     margin: 0 auto;
+         
+                  }
 }
 
-@media screen and (min-width: 768px) {
-   .container {
-      max-width: 720px;
-   }
-.icons {
-   display: none;
-}
-      .team-list  {
-      width: calc((100%-24px)/2);
-      display: flex;
-      flex-wrap: wrap;
-   }
-  .container.container-mini {
-   max-width: 582px;
-  }
 
+ @media screen and (min-width: 480px) {
+    .container .container-mini {
+       max-width: 428px;
+    }
 
-}
-
-@media screen and (min-width: 1200px) {
-   .container{
-      max-width: 1200px;
-   }
-
-   .team-list {
-      display: flex;
-      gap: 24px;
-   }
-
-.social-icon {
-   display: flex;
-   justify-content: center;
-   gap: 24px;
-
-}
-.icons {
-   display: flex;
-   gap: 24px;
-}
- .icons-link {
-    padding: 24px 100px 24px 100px;
-    background-color: #F4F4FD;
-    gap: 24px;
+    .icons {
+       display: none;
+    }
+       .feature-list {
+          color: var(--primary-text-color);
+          gap: 24px;
+          margin: 0 auto;
 
  }
- .section {
-    background: #FFFFFF;
-    padding-top: 120px;
+}
+ @media screen and (min-width: 768px) {
+    .container .container-mini {
+       max-width: 720px;
+    }
+      
 
- }
+    .icons {
+       display: none;
+    }
 
+       .list-feauter-text {
+          width: calc((100%-24px)/2);
+       }
+             .feature-list {
+                color: var(--primary-text-color);
+                display: flex;
+                gap: 24px;
+               flex-wrap: wrap;
+                margin: 0 auto;
+}
+}
+
+       @media screen and (min-width: 1200px) {
+          .container .container-mini{
+             max-width: 1158px;
+          }
+         .icons {
+             display: flex;
+             gap: 24px; }
+
+    .list-feauter-text {
+   width: calc((100%-72px)/4);
+}
+
+.feature-list {
+   color: var(--primary-text-color);
+   display: flex;
+   gap: 24px;
+   margin: 0 auto;
+   flex-wrap: nowrap;
 
 }
+
+.feature-list li .text {
+   max-width: 264px;
+   text-align: justify;
+}
+ }
