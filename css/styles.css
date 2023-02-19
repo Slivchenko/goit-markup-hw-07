@@ -123,6 +123,10 @@ img {
    margin-left: 40px;
 }
 
+.no-scroll {
+   overflow: hidden;
+}
+
 .link-contacts{
    margin-left: 40px;
 }
