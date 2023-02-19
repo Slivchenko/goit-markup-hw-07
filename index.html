@@ -17,15 +17,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desctop.css">
 
 </head>
 <body>
 
-    <header class="page-header">
+ <header class="page-header">
         <div class="container header-container">
         <nav class="nav-list">
             <a href="./index.html" class="logo link link-nav"> <span class="accent link ">WEB</span>STUDIO</a>
-        <ul class="list">
+        <ul class="list header-list">
             <li class="link-studio"><a href="./index.html" class="link current link-nav site-nav ">Studio</a></li>
             <li class="link-portfolio"><a href="./portfolio.html" class="link link-nav site-nav">Portfolio</a></li>
             <li class="link-contacts"><a href="./index.html" class="link link-nav site-nav">Contacts</a></li>
@@ -34,9 +37,73 @@
        <address class="auth-nav-container">
         <ul class="auth-nav list">
             <li class="link-mail"><a href="mailto:info@devstudio.com" class="list-mail link link-nav">info@devstudio.com</a></li>
-            <li><a href="tel:+110001111111" class="tel-list link link-nav">+11 (000) 111-11-11</a></li>
+            <li class="link-tel"><a href="tel:+110001111111" class="tel-list link link-nav">+11 (000) 111-11-11</a></li>
         </ul>
      </address>
+    </div>
+    
+    
+    <button type="button" data-menu-open class="menu-open-btn"><svg class="icon-menu-charm" width="32px" height="22px">
+        <use href="./images/sprite.svg#icon-charm"></use>
+    </svg></button>
+
+
+    <div class="moby-menu" data-menu>
+        <div class="container">
+            <div>
+        <button type="button" data-menu-close class="menu-close-moby">
+            <svg class="icon-close" width="8px" height="8px">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+<nav>
+        <ul class="list moby-list">
+            <li class="link-studio-moby"><a href="./index.html" class="link current site-nav-moby">Studio</a></li>
+            <li class="link-portfolio-moby"><a href="./portfolio.html" class="link  site-nav-moby">Portfolio</a></li>
+            <li class="link-contacts-moby"><a href="./index.html" class="link  site-nav-moby">Contacts</a></li>
+        </ul>
+        </nav>
+        </div>
+
+        <div>
+        <address class="auth-nav-container-moby">
+            <ul class="auth-nav-moby list">
+                <li class="link-tel-moby"><a href="tel:+110001111111" class="tel-list link link-tel-moby">+11 (000) 111-11-11</a></li>
+                <li class="link-mail-moby"><a href="mailto:info@devstudio.com" class="list-mail link link-nav-moby">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="social-list-footer-moby">
+            <li class="social-list-item">
+                <a href="" class="link social-link-moby"><svg class="social-list-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#instagram"></use>
+                    </svg></a>
+        
+            </li>
+        
+            <li class="social-list-item">
+                <a href="" class="link social-link-moby">
+                    <svg class="social-list-icon" width="24px" height="24px">
+                        <use href="./images/sprite.svg#twitter"></use>
+                    </svg></a>
+        
+            </li>
+        
+            <li class="social-list-item">
+                <a href="" class="link social-link-moby"><svg class="social-list-icon" width="24px" height="24px">
+                        <use href="./images/sprite.svg#facebook"></use>
+                    </svg></a>
+        
+            </li>
+        
+            <li class="social-list-item">
+                <a href="" class="link social-link-moby"><svg class="social-list-icon" width="24px" height="24px">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                    </svg></a>
+            </li>
+        </ul>
+        </div>
+        </div>
     </div>
     </header>
 
@@ -46,10 +113,11 @@
         <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
          <button type="button" data-modal-open class="button">Order Service</button>
         </div>
+       
     </section>
    
 
-    <section class="section container-mini">
+    <section class="section">
         <div class="container container-title ">
         <h2 class="section-title-none">solution for busines</h2>
         <ul class="icons">
@@ -97,7 +165,7 @@
             <li class="list-feauter-text">  
                
                 <h3 class="feature-list-title">Technologies</h3>
-                <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                <p class="text text-last">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
             </li>
         </ul>
        </div>
@@ -115,12 +183,13 @@
     </div>
     </section>
     
-    <section class="section-work">
-        <div class="container">
+    <section class="section-work ">
+        <div class="container container-mini">
     <h2 class="section-title">Our Team</h2>
     <ul class="team-list">
         <li class="list-color">
-            <img src="./images/face1.jpg" alt="face1"  width="264">
+            <img src="./images/face1.jpg" alt="face1"  width="264" 
+            srcset="./images/face1.jpg 1x, ./images/face1-2x.jpg 2x">
             <div class="text-team-title">
             <h3 class="team-list-title">Mark Guerrero</h3>
             <p class="text-team">Product Designer</p>
@@ -160,7 +229,8 @@
             </div>
         </li>
         <li class="list-color">
-            <img src="./images/face2.jpg" alt="face2" width="264">
+            <img src="./images/face2.jpg" alt="face2" width="264" 
+            srcset="./images/face2.jpg 1x, ./images/face2-2x.jpg 2x">
             <div class="text-team-title">
             <h3 class="team-list-title">Tom Ford</h3>
             <p class="text-team">Frontend Developer</p>
@@ -198,7 +268,8 @@
             </div>
         </li>
         <li class="list-color">
-            <img src="./images/face3.jpg" alt="face3" width="264">
+            <img src="./images/face3.jpg" alt="face3" width="264"
+            srcset="./images/face3.jpg 1x, ./images/face3-2x.jpg 2x">
             <div class="text-team-title">
             <h3 class="team-list-title">Camila Garcia</h3>
             <p class="text-team">Marketing</p>
@@ -236,7 +307,8 @@
             </div>
         </li>
         <li class="list-color">
-            <img src="./images/face4.jpg" alt="face4" width="264">
+            <img src="./images/face4.jpg" alt="face4" width="264"
+            srcset="./images/face4.jpg 1x, ./images/face4-2x.jpg 2x">
             <div class="text-team-title">
             <h3 class="team-list-title">Daniel Wilson</h3>
             <p class="text-team">UI Designer</p>
@@ -275,7 +347,7 @@
     </div>
     </section>
     <section class="costumer">
-<div class="container">
+<div class="container costumer-mini">
     <h2 class="section-title">Customers</h2>
     <ul class="company-logo">
         <li class="link-logo-company">
@@ -457,7 +529,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
-
+<script src="./js/menu.js"></script>
 </body>
 </html>
 
