@@ -113,6 +113,10 @@
     flex-wrap: wrap;
 
 }
+
+.company-link {
+    width: 168px;
+}
 .link-logo-company {
     width: calc((100% - 48px) / 3);
 }
@@ -137,11 +141,30 @@
                     
                 }
 
+             .frame-button {
+         display: flex;
+            align-items: center;
+            background: #4D5AE5;
+            color: #FFFFFF;
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 500;
+             font-size: 16px;
+             line-height: 1.5;
+             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            padding: 8px 24px 8px 24px;
+           border: none;
+           margin-left: 24px;
+                
+                                }
+
 .container-footer {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: baseline;
+    max-width: 596px;
 }
 
 .footer-cont {

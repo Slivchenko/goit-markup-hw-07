@@ -107,4 +107,17 @@
      gap: 56px;
  }
 
+.online-input {
+    width: 396px;
+}
+.costumer-mini {
+    max-width: 396px;
+}
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 396px;
+}
 }

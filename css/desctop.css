@@ -123,10 +123,15 @@
         gap: 24px;
         flex-wrap: nowrap;    }
 
+                .company-link {
+                    width: 168px;
+                }
+
     .container-footer {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
+    width: 1158px;
      }
          .footer {
         display: flex;
@@ -140,6 +145,7 @@
          gap: 16px;
         }
          .logo-footer {
+            text-align: start;
         color: #F4F4FD;
         font-family: Raleway, cursive;
         font-weight: 800;
