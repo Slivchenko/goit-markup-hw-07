@@ -1,10 +1,10 @@
 @media screen and (min-width: 480px) {
     .container {
-        max-width: 396px;
+        max-width: 428px;
     }
 
     .container-mini {
-        max-width: 264px;
+       max-width: 264px;
     }
 
     .icons {
@@ -75,13 +75,7 @@
 
     }
 
-.list-feauter-text:first-child {
-    margin-top: 96px;
-}
 
-.list-feauter-text:not(:first-child) {
-    margin-top: 72px;
-}
  .modal {
      width: 392px;
  }
@@ -118,6 +112,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    width: 396px;
+    max-width: 396px;
 }
 }
