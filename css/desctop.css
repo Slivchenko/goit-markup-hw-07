@@ -285,4 +285,8 @@
           .list-feauter-text:nth-of-type(4) {
          margin-top: 8px;
                    }
+    .list-color:nth-child(3),
+     .list-color:nth-child(4) {
+      margin-top: 0px;
+       }
 }
