@@ -27,6 +27,7 @@ ul {
 } 
 img {
    display: block;
+   width: 100%;
 }
 .section-title-portfolio {
    text-decoration: none;
@@ -186,7 +187,7 @@ img {
 
 
 .container-mini {
-   max-width: 294px;
+   max-width: 296px;
 }
 
 .header-list {
