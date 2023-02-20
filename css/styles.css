@@ -536,8 +536,7 @@ background-color: #2E2F42;
    .work-img {
       display: flex;
       gap: 24px;
-      width: calc((100%-48px)/3);
-      
+     
    }
 
 .list-color{
