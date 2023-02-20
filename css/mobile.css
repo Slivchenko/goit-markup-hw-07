@@ -77,8 +77,18 @@
 
 
  .modal {
-     width: 392px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+            padding: 24px;
+            width: 392px;
+            min-height: 586px;
+            background-color: #FCFCFC;
+            border-radius: 4px;
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
+
  .link-tel-moby {
      color: #4D5AE5;
      transition:
