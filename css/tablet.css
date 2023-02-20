@@ -51,6 +51,12 @@
         width: calc((100% - 24px) / 2);
     }
 
+        .list-color:nth-child(3),
+                .list-color:nth-child(4)
+                {margin-top: 64px;
+
+                }
+
     .text {
         flex-wrap: wrap;
         word-wrap: break-word;
