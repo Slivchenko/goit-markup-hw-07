@@ -3,7 +3,9 @@
         max-width: 428px;
     }
 
-
+.container-mini {
+    max-width: 296px;
+}
     .icons {
         display: none;
     }

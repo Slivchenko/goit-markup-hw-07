@@ -32,6 +32,7 @@
         font-size: 36px;
         line-height: 1.1;
         margin-top: 72px;
+        text-align: start;
     }
 
     .work-list {
@@ -49,6 +50,7 @@
 
     .list-color {
         width: calc((100% - 24px) / 2);
+        margin-bottom: 0px;
     }
 
         .list-color:nth-child(3),
@@ -181,7 +183,11 @@
     flex-wrap: wrap;
     justify-content: start;
     align-items: baseline;
-    max-width: 596px;
+    max-width: 584px;
+}
+
+.costumer-mini {
+    max-width: 584px;
 }
 
 .footer-cont {
@@ -285,5 +291,12 @@ margin-left: auto;
   }
    .moby-menu {
        display: none;
+   }
+
+   .list-mail {
+    font-size: 12px;
+   }
+   .tel-list {
+       font-size: 12px;
    }
 }

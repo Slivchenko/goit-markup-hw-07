@@ -295,4 +295,10 @@
            {
             width: calc((100% - 48px) / 3);
            }
+          .list-mail {
+            font-size: 16px;
+          }
+     .tel-list {
+        font-size: 16px;
+     }
 }
